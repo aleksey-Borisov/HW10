@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+
+        .registration-form {
+            border: 2px solid #4a6fa5;
+            border-radius: 10px;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+
+        .form-title {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #34495e;
+            font-weight: 500;
+        }
+
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+
+        .form-group input[type="text"]:focus,
+        .form-group textarea:focus {
+            border-color: #4a6fa5;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+        }
+
+
+        #submit-btn {
+            background-color: #4a6fa5;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        #submit-btn:hover {
+            background-color: #3a5a8f;
+        }
+
+        /* Эффект при нажатии */
+        #submit-btn:active {
+            transform: translateY(1px);
+        }
+
+
+        input[type="text"], textarea, button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h2 class="form-title">Регистрация</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="lastname">Фамилия:</label>
+                <input type="text" id="lastname" name="lastname"  required>
+            </div>
+
+            <div class="form-group">
+                <label for="firstname">Имя:</label>
+                <input type="text" id="firstname" name="firstname"required>
+            </div>
+
+            <div class="form-group">
+                <label for="middlename">Отчество:</label>
+                <input type="text" id="middlename" name="middlename">
+            </div>
+
+            <div class="form-group">
+                <label for="about">О себе:</label>
+                <textarea id="about" name="about" ></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn">Зарегистрироваться</button>
+        </form>
+    </div>
+</body>
+</html>
