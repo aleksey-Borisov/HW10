@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобили - Сетка карточек</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            margin-bottom: 40px
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .cars-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.33% - 20px);
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .car-image {
+            width: 100%;
+            height: 180px;
+        }
+
+        .car-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .car-model {
+            font-size: 20px;
+            margin: 0 0 12px 0;
+            color: #2c3e50;
+        }
+
+        .car-specs {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .car-specs li {
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Каталог автомобилей</h1>
+
+        <div class="cars-grid">
+            <!-- Карточка 1 -->
+            <div class="car-card">
+                <img src="https://via.placeholder.com/400x200?text=Toyota+Camry" alt="Toyota Camry" class="car-image">
+                <div class="car-info">
+                    <h3 class="car-model">Toyota Camry</h3>
+                    <ul class="car-specs">
+                        <li>Вес: 1,550 кг</li>
+                        <li>Длина: 4,885 мм</li>
+                        <li>Ширина: 1,840 мм</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="car-card">
+                <img src="https://via.placeholder.com/400x200?text=Honda+Civic" alt="Honda Civic" class="car-image">
+                <div class="car-info">
+                    <h3 class="car-model">Honda Civic</h3>
+                    <ul class="car-specs">
+                        <li>Вес: 1,270 кг</li>
+                        <li>Длина: 4,630 мм</li>
+                        <li>Ширина: 1,800 мм</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="car-card">
+                <img src="https://via.placeholder.com/400x200?text=Ford+Mustang" alt="Ford Mustang" class="car-image">
+                <div class="car-info">
+                    <h3 class="car-model">Ford Mustang</h3>
+                    <ul class="car-specs">
+                        <li>Вес: 1,685 кг</li>
+                        <li>Длина: 4,788 мм</li>
+                        <li>Ширина: 1,916 мм</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="cars-grid">
+            <div class="car-card">
+                <img src="https://via.placeholder.com/400x200?text=Toyota+Camry" alt="Toyota Camry" class="car-image">
+                <div class="car-info">
+                    <h3 class="car-model">Toyota Camry</h3>
+                    <ul class="car-specs">
+                        <li>Вес: 1,550 кг</li>
+                        <li>Длина: 4,885 мм</li>
+                        <li>Ширина: 1,840 мм</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://via.placeholder.com/400x200?text=Honda+Civic" alt="Honda Civic" class="car-image">
+                <div class="car-info">
+                    <h3 class="car-model">Honda Civic</h3>
+                    <ul class="car-specs">
+                        <li>Вес: 1,270 кг</li>
+                        <li>Длина: 4,630 мм</li>
+                        <li>Ширина: 1,800 мм</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <img src="https://via.placeholder.com/400x200?text=Ford+Mustang" alt="Ford Mustang" class="car-image">
+                <div class="car-info">
+                    <h3 class="car-model">Ford Mustang</h3>
+                    <ul class="car-specs">
+                        <li>Вес: 1,685 кг</li>
+                        <li>Длина: 4,788 мм</li>
+                        <li>Ширина: 1,916 мм</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
